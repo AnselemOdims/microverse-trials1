@@ -21,3 +21,36 @@
     color: #F0EBCC;
 
 }
+.section2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    
+}
+.section2-video {
+    display: flex;
+    /* justify-content: space-arou; */
+    flex-direction: row;
+}
+.section2 p{
+    max-width: 560px;
+    width: 100%;
+    text-align: center;
+    color:#343A40;
+    font-size: 18px;
+    font-weight:500; 
+    line-height: 25px;
+    background-color: #fff;
+    border: 1px solid #77ACF1;
+    padding: 10px;
+    padding-top: 20px;
+    
+}
+.section2-title{
+    font-size: 26px;
+    font-weight: 600;
+    color: #343A40;
+    margin-bottom: 50px;
+}
