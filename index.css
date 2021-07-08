@@ -1,0 +1,83 @@
+
+
+:root{
+    --primary-1: #77ACF1;
+    --primary-2:  #b0d0fa;
+
+    --accent-1: #F0EBCC;
+    --accent-2: #f5ebad;
+
+    --neutral-1:  #fff;
+    --neutral-2: #343A40;
+
+}
+
+body{
+    margin: 0
+}
+
+#nav-bar{  
+    display: flex;   
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.07),
+    0px -3px 7px 1px rgba(0, 0, 0, 0.07);
+    width: 100%  
+}
+
+#logo, ul{
+    display: flex;
+    list-style: none
+}
+#logo{
+    margin: 10px 
+}
+#logo p{
+    font-size:16px;
+
+}
+ul{
+    flex: 1;
+    margin-left: 500px;
+    text-align: center;
+    align-items: center
+}
+
+.nav-link a{
+    text-decoration: none;
+    margin: 10px;
+    text-align: center;
+    color: var(--neutral-2)
+}
+
+#header-img{
+    width: 50px;
+}
+
+#login { 
+    background: var(--primary-1);
+    color: var(--neutral-1);
+    padding: 15px;
+    text-align: center;
+    margin-left: 15px
+}
+
+#sign-up{
+    border: solid 1px var(--primary-1);
+    color: var(--neutral-2);
+    margin-left: 15px;
+    text-align: center;
+    padding: 15px;
+}
+#sign-up:hover{
+    background: var(--primary-1);
+    border: none;
+    color: var(--neutral-1);
+    cursor: pointer
+}
+
+@media only screen and (max-width: 768px) {
+        ul{
+            margin: 0
+
+}
