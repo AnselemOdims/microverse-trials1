@@ -1,0 +1,23 @@
+.bg-image{
+    background-image: url('../images/Abuja1.jpg');
+    height: 650px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bg-image h1 {
+    font-size: 78px;
+    color: #F0EBCC;
+    font-weight: 600;
+
+}
+.bg-image p {
+    font-size: 25px;
+    font-weight: 500;
+    color: #F0EBCC;
+
+}
