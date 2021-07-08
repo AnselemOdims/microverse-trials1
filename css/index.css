@@ -1,4 +1,5 @@
-
+@import url('./reset.css');
+@import url('./style.css');
 
 :root{
     --primary-1: #77ACF1;
@@ -6,6 +7,7 @@
 
     --accent-1: #F0EBCC;
     --accent-2: #f5ebad;
+    --accent-3: #f5df54;
 
     --neutral-1:  #fff;
     --neutral-2: #343A40;
@@ -39,7 +41,8 @@ body{
 }
 #logo p{
     font-size:16px;
-    margin: 15px 0
+    margin: 15px 0;
+    font-weight: 600
 }
 ul{
     flex: 1;
@@ -67,7 +70,10 @@ ul{
     text-align: center;
     margin-left: 15px
 }
-
+#login a:hover{
+    background: var(--accent-2);
+    color: var(var(--neutral-2))
+}
 #sign-up a{
     border: solid 2px var(--primary-1);
     color: var(--neutral-2);
@@ -76,14 +82,16 @@ ul{
     padding: 15px;
 }
 #sign-up a:hover{
-    background: var(--primary-1);
+    background: var(--accent-2);
     border: none;
     color: var(--neutral-1);
     cursor: pointer
 }
 
 /** Footer Section*/
-
+footer{
+    width: 100%
+}
 #footer-nav{  
     display: flex;   
     justify-content: center;
@@ -94,7 +102,7 @@ ul{
     font-family: Helvetica, sans-serif;
     text-align: center;
     color: var(--neutral-1);
-    height: 70px
+    height: 70px;
 }
 
 footer ul{
@@ -104,6 +112,5 @@ footer ul{
 @media only screen and (max-width: 768px) {
         ul{
             margin: 0
-
 }
 }

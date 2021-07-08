@@ -12,17 +12,16 @@
 }
 .bg-image h1 {
     font-size: 78px;
-    color: #F0EBCC;
+    color: var(--accent-3);
     font-weight: 600;
-
 }
 .bg-image p {
     font-size: 25px;
     font-weight: 500;
-    color: #F0EBCC;
+    color: #f1e8ad;
 
 }
-.section2 {
+.section2, .section3 {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -39,19 +38,58 @@
     max-width: 560px;
     width: 100%;
     text-align: center;
-    color:#343A40;
+    color: var(--neutral-2);
     font-size: 18px;
     font-weight:500; 
     line-height: 25px;
-    background-color: #fff;
-    border: 1px solid #77ACF1;
+    background-color: var(--neutral-1);
+    border: 1px solid var(--primary-1);
     padding: 10px;
     padding-top: 20px;
     
 }
-.section2-title{
+.section2-title, .section3 h2{
     font-size: 26px;
     font-weight: 600;
-    color: #343A40;
+    color: var(--neutral-2);
     margin-bottom: 50px;
+    font-family:Arial, Helvetica, sans-serif
 }
+.section3{
+    height: 250px;
+    background: #f7f5e8;
+    padding: 50px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+#submit { 
+    background-color:  var(--primary-1) ;
+    color: #F0EBCC; 
+    border: 1px solid #F0EBCC; 
+    width: 120px; 
+    height: 35px;
+     font-size: 18px; 
+     letter-spacing: 3px; 
+    } 
+    #submit:hover{ 
+        background-color: #F0EBCC;
+         color:#77ACF1; 
+         border: 1px solid #77ACF1; 
+        }
+    #form-control{
+        display: flex;
+        justify-content: center;
+        margin-top:20px
+    } 
+    input::placeholder { 
+        color: #343A40; 
+        font-size: 14px; 
+        font-weight: 400; 
+    } 
+
+    #email { 
+        border: 1px solid #77ACF1; 
+        height: 30px;
+         width: 200px;
+     }
+ 
