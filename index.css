@@ -16,13 +16,18 @@ body{
     margin: 0
 }
 
+
+/** Header Section*/
 #nav-bar{  
     display: flex;   
+    justify-content: space-between;
     position: fixed;
     top: 0;
     box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.07),
     0px -3px 7px 1px rgba(0, 0, 0, 0.07);
-    width: 100%  
+    width: 100% ;
+    background: var(--neutral-1);
+    font-family: Helvetica, sans-serif
 }
 
 #logo, ul{
@@ -34,27 +39,28 @@ body{
 }
 #logo p{
     font-size:16px;
-
+    margin: 15px 0
 }
 ul{
     flex: 1;
-    margin-left: 500px;
     text-align: center;
-    align-items: center
+    align-items: center;
+    margin: 30px
+    /* padding-top: 10px */
 }
 
 .nav-link a{
     text-decoration: none;
-    margin: 10px;
     text-align: center;
-    color: var(--neutral-2)
+    color: var(--neutral-2);
+    margin-left: 15px
 }
 
 #header-img{
     width: 50px;
 }
 
-#login { 
+#login a{ 
     background: var(--primary-1);
     color: var(--neutral-1);
     padding: 15px;
@@ -62,22 +68,42 @@ ul{
     margin-left: 15px
 }
 
-#sign-up{
-    border: solid 1px var(--primary-1);
+#sign-up a{
+    border: solid 2px var(--primary-1);
     color: var(--neutral-2);
     margin-left: 15px;
     text-align: center;
     padding: 15px;
 }
-#sign-up:hover{
+#sign-up a:hover{
     background: var(--primary-1);
     border: none;
     color: var(--neutral-1);
     cursor: pointer
 }
 
+/** Footer Section*/
+
+#footer-nav{  
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    background: var(--primary-2);
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    color: var(--neutral-1);
+    height: 70px
+}
+
+footer ul{
+    text-align: center
+}
+
 @media only screen and (max-width: 768px) {
         ul{
             margin: 0
 
+}
 }
